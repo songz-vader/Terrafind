@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0A192F;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* Banner with logo */
+.top-banner {
+    display: flex;
+    align-items: center;
+    background-color: #112240;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.site-title h1 {
+    color: orange;
+    margin-bottom: 5px;
+}
+
+.site-title p {
+    color: #ccd6f6;
+    font-size: 0.9em;
+}
+
+/* Table layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+/* Sidebar */
+td:first-child {
+    background-color: #112240;
+    border-right: 2px solid #233554;
+    width: 20%;
+}
+
+td:first-child h3 {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+td:first-child p {
+    margin-bottom: 10px;
+}
+
+td:first-child a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+td:first-child a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+td:nth-child(2) {
+    background-color: #1D3557;
+    width: 60%;
+}
+
+td:nth-child(2) h2 {
+    color: orange;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+td:nth-child(2) h3 {
+    color: #64ffda;
+    margin-top: 30px;
+}
+
+td:nth-child(2) p {
+    margin-bottom: 15px;
+}
+
+td:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Contact sidebar */
+td:last-child {
+    background-color: #112240;
+    border-left: 2px solid #233554;
+    width: 20%;
+}
+
+td:last-child h3 {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+td:last-child p {
+    margin-bottom: 10px;
+}
+
+td:last-child a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+td:last-child a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .top-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        border: none;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
